@@ -1,15 +1,17 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wedding invitation</title>
-</head>
-<body>
+<?php include "./header.php" ?>
 
-   <?php include 'intro.php'?>
-   
+<main>
+    <?php include './mainvisual.php'?>
+    <?php include './intro.php'?>
+    <?php include './gallery.php'?>
+    <?php include './calendar.php'?>
+    <?php include './add_photo.php'?>
+    <?php include './location.php'?>
+    <?php include './account.php'?>
+    <?php include './notice.php'?>
 
-</body>
-</html>
+    <?php include './menubar.php'?>
+</main><!-- main -->
+
+
+<?php include "./footer.php" ?>
