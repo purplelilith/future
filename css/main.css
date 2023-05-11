@@ -183,10 +183,18 @@ table {
   border-spacing: 0;
 }
 
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
 html,
 body {
+  width: 100%;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 14px;
   color: #333;
   line-height: 1.4;
   word-break: keep-all;
@@ -226,6 +234,12 @@ button {
   border: 0 !important;
   overflow: hidden !important;
   clip: rect(0 0 0 0) !important;
+}
+
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: red;
 }
 
 .row {

@@ -153,14 +153,17 @@ table {
 }
 
 // base
+html{font-size: 10px;}
+body{font-size: 1.4rem;}
 html,
 body {
+  width: 100%;
   font-family: $font-family;
-  font-size: $base-font;
   color: $color-black;
   line-height: 1.4;
   word-break: keep-all;
 }
+
 input,
 textarea {
   margin: 0;
@@ -193,4 +196,10 @@ button {
     border: 0 !important;
     overflow: hidden !important;
     clip: rect(0 0 0 0) !important;
-  }
+}
+
+main {
+  max-width: $container-width;
+  margin: 0 auto;
+  background-color: red;
+}
