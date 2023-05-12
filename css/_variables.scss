@@ -1,5 +1,5 @@
 // 컨텐츠 크기
-$container-width: 1024px;
+$container-width: 800px;
 
 // 메인 컬러
 $color-darkpink: #926E6F;
@@ -22,7 +22,8 @@ $color-gray07: #707070;
 
 // 폰트
 $base-font: 10px;
-$font-family: "Noto Sans KR", sans-serif;
+$font-family: "Ms Madi", "Noto Sans KR", sans-serif;
+
 
 // 실제 적용시 알기 쉽게 font-family > '폰트명' 으로 수정 base.scss 에서 폰트 패밀리 바꿔주기
 // ex) $gmarketsasns: 'GmarketSans', sans-serif;

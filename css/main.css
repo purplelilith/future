@@ -1,6 +1,10 @@
-/* 
- * 'Noto Sans KR
- */
+@font-face {
+  font-family: "Ms Madi";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./fonts/MsMadi-Regular.ttf) format("truetype");
+  unicode-range: U+0041-005A, U+0061-007A;
+}
 @font-face {
   font-family: "Noto Sans KR";
   font-style: normal;
@@ -194,7 +198,7 @@ body {
 html,
 body {
   width: 100%;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Ms Madi", "Noto Sans KR", sans-serif;
   color: #333;
   line-height: 1.4;
   word-break: keep-all;
@@ -237,9 +241,8 @@ button {
 }
 
 main {
-  max-width: 1024px;
+  max-width: 800px;
   margin: 0 auto;
-  background-color: red;
 }
 
 .row {
@@ -328,4 +331,54 @@ main {
 .col-12 {
   flex-basis: calc(100% / 12 * 12);
   max-width: calc(100% / 12 * 12);
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+.mainvisual {
+  position: relative;
+}
+.mainvisual .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.mainvisual .bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.6;
+}
+.mainvisual .bg div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.4;
+}
+.mainvisual-wrap .mainpic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 600px;
+  height: 70vh;
+  border-radius: 300px 300px 0 0;
+}
+@media (max-width: 767px) {
+  .mainvisual-wrap .mainpic {
+    width: 320px;
+    height: 60vh;
+    border-radius: 160px 160px 0 0;
+  }
 }/*# sourceMappingURL=main.css.map */

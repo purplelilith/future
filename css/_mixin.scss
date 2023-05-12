@@ -33,11 +33,6 @@
       @content;
     }
   }
-  @mixin tablet {
-    @media (max-width: #{$breakpoint-pc - 1px}) {
-      @content;
-    }
-  }
   @mixin mobile {
     @media (max-width: #{$breakpoint-tablet - 1px}) {
       @content;
@@ -45,7 +40,7 @@
   }
   // 320px 까지 맞출시 사용
   @mixin smallest {
-    @media (min-width:#{$breakpoint-smallest}) and (max-width:#{$breakpoint-mobile - 1px}) {
+    @media (max-width:#{$breakpoint-mobile - 1px}) {
       @content;
     }
   }
