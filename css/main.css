@@ -500,28 +500,29 @@ h2 span {
   padding-top: 4rem;
 }
 
+.gallery_grid {
+  width: 90%;
+  margin: 4rem auto;
+}
 .gallery_grid h2 {
   font-size: 3rem;
+  margin-bottom: 3rem;
 }
-.gallery_grid .my-gallery {
-  width: 90%;
-  margin: 0 auto;
-}
-.gallery_grid .my-gallery .flexwrap {
+.gallery_grid #my-gallery .flexwrap {
   display: flex;
   gap: 0.8rem;
   margin-bottom: 0.8rem;
 }
-.gallery_grid .my-gallery .flexwrap figure {
+.gallery_grid #my-gallery .flexwrap figure {
   flex: 1;
   position: relative;
 }
-.gallery_grid .my-gallery .flexwrap figure::before {
+.gallery_grid #my-gallery .flexwrap figure::before {
   content: "";
   display: block;
   padding-top: 100%;
 }
-.gallery_grid .my-gallery .flexwrap figure a {
+.gallery_grid #my-gallery .flexwrap figure a {
   position: absolute;
   top: 0;
   left: 0;

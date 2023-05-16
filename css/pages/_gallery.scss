@@ -1,7 +1,7 @@
 .gallery_grid{
-    h2{font-size: 3rem;}
-    .my-gallery{
-        width: 90%; margin: 0 auto;
+    width: 90%; margin: 4rem auto;
+    h2{font-size: 3rem; margin-bottom: 3rem;}
+    #my-gallery{        
         .flexwrap{
             display: flex; gap: 0.8rem; margin-bottom: 0.8rem;
             figure{flex: 1; position: relative; 

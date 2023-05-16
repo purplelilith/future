@@ -11,10 +11,10 @@
         <div class="swiper">
             <ul class="swiper-wrapper">
                 <li class="swiper-slide">
-                    <figure class="mainpic"><img src="./css/images/wedding_5.webp" alt=""></figure>
+                    <figure class="mainpic"><img src="./css/images/wedding_8.webp" alt=""></figure>
                 </li>
                 <li class="swiper-slide">
-                    <figure class="mainpic"><img src="./css/images/wedding_6.webp" alt=""></figure>
+                    <figure class="mainpic"><img src="./css/images/wedding_5.webp" alt=""></figure>
                 </li>
             </ul>
         </div>
