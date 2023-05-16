@@ -3,7 +3,7 @@
 <main>
     <?php include './mainvisual.php'?>
     <?php include './intro.php'?>
-    <?php include './gallery.php'?>
+    <?php include './gallery_grid.php'?>
     <?php include './calendar.php'?>
     <?php include './add_photo.php'?>
     <?php include './location.php'?>
