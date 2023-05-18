@@ -15,8 +15,8 @@
   
   --pswp-icon-color: #fff;
   --pswp-icon-color-secondary: #4f4f4f;
-  --pswp-icon-stroke-color: #4f4f4f;
-  --pswp-icon-stroke-width: 2px;
+  /* --pswp-icon-stroke-color: #4f4f4f;
+  --pswp-icon-stroke-width: 2px; */
 
   --pswp-error-text-color: var(--pswp-icon-color);
 }
@@ -302,10 +302,10 @@ div.pswp__img--placeholder,
 .pswp__button--arrow {
   position: absolute;
   top: 0;
-  width: 75px;
-  height: 100px;
+  width: 50px;
+  height: 80px;
   top: 50%;
-  margin-top: -50px;
+  margin-top: -40px;
 }
 
 .pswp__button--arrow:disabled {
@@ -315,9 +315,9 @@ div.pswp__img--placeholder,
 
 .pswp__button--arrow .pswp__icn {
   top: 50%;
-  margin-top: -30px;
-  width: 60px;
-  height: 60px;
+  margin-top: -20px;
+  width: 40px;
+  height: 40px;
   background: none;
   border-radius: 0;
 }

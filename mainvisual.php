@@ -23,7 +23,7 @@
             <p>2023 / 9 / 8</p>
         </div>
 
-        <div class="btn-wrap">
+        <div class="main-btn-wrap">
             <button class="swiper-button-prev"></button>
             <button class="swiper-button-next"></button>
         </div>
@@ -31,10 +31,11 @@
 </section>
 
 <script>
-    const swiper = new Swiper('.swiper', {        
+    let mainswiper = new Swiper('.swiper', {        
         loop: true,          
         autoplay: {
             delay: 5000,
+            disableOnInteraction:false 
         },            
         speed : 1000,  
         slidesPerView: 1,

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Ms Madi";
   font-style: normal;
@@ -360,6 +361,13 @@ h2 span {
   display: block;
 }
 
+.btn-wrap button {
+  border: 1px solid #CA8A8B;
+  border-radius: 2rem;
+  color: #926E6F;
+  padding: 1rem 3rem 1rem 3rem;
+}
+
 .mainvisual {
   position: relative;
   display: flex;
@@ -423,7 +431,7 @@ h2 span {
 .mainvisual-wrap .flex_wrap p:first-child {
   max-width: 13rem;
 }
-.mainvisual-wrap .btn-wrap {
+.mainvisual-wrap .main-btn-wrap {
   position: absolute;
   bottom: -5%;
   left: 5%;
@@ -431,19 +439,19 @@ h2 span {
   align-items: center;
   gap: 1.2rem;
 }
-.mainvisual-wrap .btn-wrap .swiper-button-prev, .mainvisual-wrap .btn-wrap .swiper-button-next {
+.mainvisual-wrap .main-btn-wrap .swiper-button-prev, .mainvisual-wrap .main-btn-wrap .swiper-button-next {
   position: static;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
   background-color: rgba(68, 68, 68, 0.3);
 }
-.mainvisual-wrap .btn-wrap .swiper-button-prev::after, .mainvisual-wrap .btn-wrap .swiper-button-next::after {
+.mainvisual-wrap .main-btn-wrap .swiper-button-prev::after, .mainvisual-wrap .main-btn-wrap .swiper-button-next::after {
   font-size: 1rem;
   color: #fff;
   font-weight: 600;
 }
-.mainvisual-wrap .btn-wrap .swiper-button-prev:hover, .mainvisual-wrap .btn-wrap .swiper-button-next:hover {
+.mainvisual-wrap .main-btn-wrap .swiper-button-prev:hover, .mainvisual-wrap .main-btn-wrap .swiper-button-next:hover {
   background-color: rgba(202, 138, 139, 0.9);
 }
 
@@ -500,14 +508,15 @@ h2 span {
   padding-top: 4rem;
 }
 
-.gallery_grid {
+.gallery {
   width: 90%;
   margin: 4rem auto;
 }
-.gallery_grid h2 {
-  font-size: 3rem;
+.gallery h2 {
+  font-size: 2rem;
   margin-bottom: 3rem;
 }
+
 .gallery_grid #my-gallery .flexwrap {
   display: flex;
   gap: 0.8rem;
@@ -528,4 +537,54 @@ h2 span {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.gallery_grid .btn-wrap button {
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+}
+.gallery_grid .btn-wrap button::after {
+  content: "+";
+  display: block;
+  margin-left: 1rem;
+}
+.gallery_grid .btn-wrap button.on::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.8em;
+  content: "\f106";
+}
+.gallery_grid .btn-wrap button::before {
+  content: "사진 더보기";
+}
+.gallery_grid .btn-wrap button.on::before {
+  content: "사진 접기";
+}
+
+.gallery_slide #my-gallery {
+  position: relative;
+  overflow: hidden;
+}
+.gallery_slide #my-gallery .swiper-wrapper figure {
+  display: block;
+  width: 100%;
+  height: 70vh;
+}
+.gallery_slide #my-gallery .swiper-wrapper figure a {
+  width: 100%;
+  height: 100%;
+}
+.gallery_slide #my-gallery .gallery-btn-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.gallery_slide #my-gallery .gallery-btn-wrap .swiper-button-next, .gallery_slide #my-gallery .gallery-btn-wrap .swiper-button-prev {
+  color: #fff;
+}
+.gallery_slide #my-gallery .gallery-btn-wrap .swiper-button-next::after, .gallery_slide #my-gallery .gallery-btn-wrap .swiper-button-prev::after {
+  font-size: 3rem;
 }/*# sourceMappingURL=main.css.map */
