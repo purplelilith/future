@@ -15,8 +15,6 @@
     }//flexbox
     .textbox{
         width: 70%; max-width: 50rem; margin: 0 auto;
-        p{text-align: justify; font-size: 1.6rem; word-break: normal; line-height: 3rem; margin-bottom: 2rem;
-        &.fontstyle{color: $color-darkpink; text-align: end; padding-top: 4rem;}
-        }
+        p{text-align: justify; font-size: 1.6rem; word-break: normal; line-height: 3rem; margin-bottom: 2rem;}
     }//textbox
 }
