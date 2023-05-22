@@ -17,4 +17,24 @@
         width: 70%; max-width: 50rem; margin: 0 auto;
         p{text-align: justify; font-size: 1.6rem; word-break: normal; line-height: 3rem; margin-bottom: 2rem;}
     }//textbox
+    .line{
+        margin-top: 4rem; margin-bottom: 2rem;
+        img{width: 9rem; opacity: 0.5;}
+    }
+    .parents {
+        width: 90%; max-width: 25rem; margin: 0 auto;
+        li{
+            display:flex; color: $color-gray02; justify-content: space-between; text-align: left;
+            span{font-size: 1.8rem; color: $color-darkpink;
+                &.dot{
+                    margin-right: 0.8rem;
+                    &::before{
+                        content: ""; display:inline-block; width: 4px; height: 4px; border-radius: 2px; 
+                        background-color: $color-gray02; margin: 0 1rem; vertical-align: middle;
+                    }
+                }
+            }
+            p{flex: 1;}
+        }
+    }
 }

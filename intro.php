@@ -27,9 +27,21 @@
             부디 자리에 와주셔서 저희의 결혼을 축복해 주시기 바랍니다.
         </p>
     </div>
+    <figure class="line">
+        <img src="./css/images/line01.png" alt="">
+    </figure>
     <ul class="parents">
-        <li>정진한 한수진의 아들 민현</li>
-        <li>이형규 박영은의 딸 주연</li>
+        <li>
+            <p>
+                <span>정진한</span><span class="dot">한수진</span>의 아들
+            </p> 
+            <span class="right">민현</span></li>
+        <li>
+            <p>
+                <span>이형규</span><span class="dot">박영은</span>의 딸
+            </p> 
+            <span class="right">주연</span>
+        </li>
     </ul>
 
 </div>

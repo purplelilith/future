@@ -18,3 +18,10 @@ h2{font-size: 4.5rem; text-align: center; margin-bottom: 2rem; opacity: 0.8;
         color: $color-darkpink; padding: 1rem 3rem 1rem 3rem;
     }
 }
+
+h3{ font-weight: 600; margin-bottom: 1rem;
+    &::before, &::after{
+        content: ""; display:inline-block; width: 5px; height: 5px; border-radius: 50%; 
+        background-color: $color-pink; margin: 0 1rem; vertical-align: middle;
+    } 
+}
