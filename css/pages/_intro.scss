@@ -25,7 +25,7 @@
         width: 90%; max-width: 25rem; margin: 0 auto;
         li{
             display:flex; color: $color-gray02; justify-content: space-between; text-align: left;
-            span{font-size: 1.8rem; color: $color-darkpink;
+            span{font-size: 1.8rem; color: $color-green;
                 &.dot{
                     margin-right: 0.8rem;
                     &::before{
@@ -35,6 +35,9 @@
                 }
             }
             p{flex: 1;}
+            &:last-child {
+                span{color: $color-darkpink;}
+            }
         }
     }
 }

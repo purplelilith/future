@@ -11,7 +11,7 @@
     <?php include './account.php'?>
     <?php include './notice.php'?>
 
-    <?php include './menubar.php'?>
+    <?php include './nav.php'?>
 </main><!-- main -->
 
 

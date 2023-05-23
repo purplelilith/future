@@ -1,0 +1,44 @@
+.account{
+    margin: 10rem auto; 
+    ul{
+        margin-top: 5rem;        
+        >li{            
+            a{padding: 1.4rem 10%; position: relative; font-size: 1.6rem;
+                &::after {
+                    position: absolute; right:10%; top: 50%; transform: translateY(-50%) rotate(180deg);
+                    font-family: "Font Awesome 5 Free"; font-weight: 900; font-size: 0.8em; content: "\f106";
+                    transition: all 0.5s;
+                }
+                &::before {
+                    content: "";
+                    position: absolute; width: 90%; height: 1px; bottom: 0; left: 50%; transform: translateX(-50%);
+                    border-bottom: 1px dotted $color-gray02;
+                }
+            }
+            ul{
+                li{
+                    position: relative;
+                    padding: 1.4rem 15%; display: flex; align-items: center; justify-content: space-between;
+                    background-color: rgba($color: #E6C4C0, $alpha: 0.1);
+                    &:not(:first-child)::before{
+                        content:""; display: block; width: 70%; height: 1px; background-color:rgba($color: #E6C4C0, $alpha: 0.5);
+                        position: absolute; top:0; left: 50%; transform: translateX(-50%);
+                    }
+                    p{
+                        span{display: block; font-weight: 500;}
+                    }
+                    .btn-wrap{
+                        min-width: 7rem; font-size: 1.2rem; 
+                        >button{padding: 1rem 1.2rem 1rem 1.2rem; background-color: $color-white; }
+                    }
+                }        
+                                   
+            }
+            /* active */   
+            a.active{
+                
+                &::after{transform: rotate(0);}
+            }
+        }
+    }
+}
