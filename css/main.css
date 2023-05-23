@@ -876,6 +876,7 @@ h3::before, h3::after {
 }
 
 nav {
+  position: relative;
   width: 80%;
   border-radius: 3rem;
   margin: 0 auto;
@@ -886,16 +887,64 @@ nav > ul {
   padding: 0 2rem;
   box-sizing: border-box;
 }
-nav > ul li {
+nav > ul > li {
   flex: 1;
   text-align: center;
 }
-nav > ul li a {
+nav > ul > li > a {
   display: block;
-  padding: 6% 0;
+  padding: 30% 0;
   box-sizing: border-box;
+  transition: all 0.5s;
 }
-nav > ul li a i {
+nav > ul > li > a i {
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.5);
+}
+nav > ul > li > a:hover i {
+  color: white;
+}
+nav > ul > li ul.second-depth {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 3rem;
+  bottom: 120%;
+  left: 0;
+  overflow: hidden;
+  /* active */
+}
+nav > ul > li ul.second-depth li:not(:last-child) {
+  border-bottom: 1px dotted rgba(170, 170, 170, 0.5);
+}
+nav > ul > li ul.second-depth li a {
+  display: block;
+  padding: 1.4rem 0;
+  box-sizing: border-box;
+  text-align: left;
+  padding-left: 20%;
+}
+nav > ul > li ul.second-depth li a:not(.cancel)::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.8em;
+  content: "\f2a0";
+  margin-right: 2rem;
+  color: #939597;
+}
+nav > ul > li ul.second-depth li a span.groom {
+  color: #999B84;
+}
+nav > ul > li ul.second-depth li a span.bride {
+  color: #CA8A8B;
+}
+nav > ul > li ul.second-depth li a.cancel {
+  text-align: center;
+  padding-left: 0;
+  background-color: #f6f6f6;
+  font-weight: 500;
+}
+nav > ul > li ul.second-depth li:hover {
+  background-color: rgba(230, 196, 192, 0.2);
 }/*# sourceMappingURL=main.css.map */
