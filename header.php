@@ -15,6 +15,17 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/clipboard.min.js"></script>
     <script src="https://kit.fontawesome.com/6c43c79475.js" crossorigin="anonymous"></script>
+
     <title>wedding invitation</title>
 </head>
 <body>
+<?php include './nav.php'?>
+
+<script>
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+    window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+    })
+</script>

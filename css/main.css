@@ -337,6 +337,7 @@ main {
 section {
   width: 100%;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 img {
@@ -361,11 +362,19 @@ h2 span {
   display: block;
 }
 
+.btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  gap: 5%;
+}
 .btn-wrap button {
   border: 1px solid #CA8A8B;
   border-radius: 2rem;
   color: #926E6F;
-  padding: 1rem 3rem 1rem 3rem;
+  padding: 1rem 2rem 1rem 2rem;
 }
 
 h3 {
@@ -778,18 +787,18 @@ h3::before, h3::after {
 .account {
   margin: 10rem auto;
 }
-.account ul {
+.account > ul {
   margin-top: 5rem;
 }
-.account ul > li {
+.account > ul > li {
   /* active */
 }
-.account ul > li a {
+.account > ul > li a {
   padding: 1.4rem 10%;
   position: relative;
   font-size: 1.6rem;
 }
-.account ul > li a::after {
+.account > ul > li a::after {
   position: absolute;
   right: 10%;
   top: 50%;
@@ -800,7 +809,7 @@ h3::before, h3::after {
   content: "\f106";
   transition: all 0.5s;
 }
-.account ul > li a::before {
+.account > ul > li a::before {
   content: "";
   position: absolute;
   width: 90%;
@@ -810,7 +819,7 @@ h3::before, h3::after {
   transform: translateX(-50%);
   border-bottom: 1px dotted #939597;
 }
-.account ul > li ul li {
+.account > ul > li ul li {
   position: relative;
   padding: 1.4rem 15%;
   display: flex;
@@ -818,7 +827,7 @@ h3::before, h3::after {
   justify-content: space-between;
   background-color: rgba(230, 196, 192, 0.1);
 }
-.account ul > li ul li:not(:first-child)::before {
+.account > ul > li ul li:not(:first-child)::before {
   content: "";
   display: block;
   width: 70%;
@@ -829,19 +838,19 @@ h3::before, h3::after {
   left: 50%;
   transform: translateX(-50%);
 }
-.account ul > li ul li p span {
+.account > ul > li ul li p span {
   display: block;
   font-weight: 500;
 }
-.account ul > li ul li .btn-wrap {
+.account > ul > li ul li .btn-wrap {
   min-width: 7rem;
   font-size: 1.2rem;
 }
-.account ul > li ul li .btn-wrap > button {
+.account > ul > li ul li .btn-wrap > button {
   padding: 1rem 1.2rem 1rem 1.2rem;
   background-color: #fff;
 }
-.account ul > li a.active::after {
+.account > ul > li a.active::after {
   transform: rotate(0);
 }
 
@@ -876,16 +885,28 @@ h3::before, h3::after {
 }
 
 nav {
-  position: relative;
+  z-index: 10;
+}
+nav .nav_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+nav > ul {
   width: 80%;
   border-radius: 3rem;
   margin: 0 auto;
   background-color: rgba(146, 110, 111, 0.6);
-}
-nav > ul {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   padding: 0 2rem;
   box-sizing: border-box;
+  backdrop-filter: blur(10px);
 }
 nav > ul > li {
   flex: 1;
@@ -893,7 +914,7 @@ nav > ul > li {
 }
 nav > ul > li > a {
   display: block;
-  padding: 30% 0;
+  padding: 1.6rem 0;
   box-sizing: border-box;
   transition: all 0.5s;
 }
@@ -913,6 +934,7 @@ nav > ul > li ul.second-depth {
   left: 0;
   overflow: hidden;
   /* active */
+  display: none;
 }
 nav > ul > li ul.second-depth li:not(:last-child) {
   border-bottom: 1px dotted rgba(170, 170, 170, 0.5);
@@ -945,6 +967,14 @@ nav > ul > li ul.second-depth li a.cancel {
   background-color: #f6f6f6;
   font-weight: 500;
 }
-nav > ul > li ul.second-depth li:hover {
-  background-color: rgba(230, 196, 192, 0.2);
+nav.on .nav_bg {
+  background-color: rgba(51, 51, 51, 0.7);
+  backdrop-filter: blur(0.5rem);
+}
+nav.on ul.second-depth {
+  display: block;
+}
+
+.share {
+  margin: 5rem auto;
 }/*# sourceMappingURL=main.css.map */

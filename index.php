@@ -10,8 +10,8 @@
     <?php include './location.php'?>
     <?php include './account.php'?>
     <?php include './notice.php'?>
-
-    <?php include './nav.php'?>
+    <?php include './share.php'?>
+    
 </main><!-- main -->
 
 

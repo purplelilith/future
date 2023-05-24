@@ -80,7 +80,6 @@
 
         //남은 날짜 카운트
         const diff = nowMonth - today;
-        console.log(nowMonth, today);
         const diffDay = Math.ceil(diff / (1000*60*60*24));
         if(diffDay > 0) {
             $('#count').html(`민현과 주연의 결혼식이<br> <span>${diffDay}일</span> 남았습니다`);
