@@ -1,4 +1,4 @@
-<section class="gallery_slide gallery">
+<section class="gallery_slide gallery" id="gallery">
     <h2>
         <span>Always Remember</span>
         <span>Our Moments</span>

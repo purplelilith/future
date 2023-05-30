@@ -1,4 +1,4 @@
-<div class="account">
+<div class="account" id="account">
     <h3>마음 전하실 곳</h3>
 
     <ul>
@@ -10,14 +10,14 @@
                         신한은행 123-45-56789
                         <span>정민현</span>
                     </p>
-                    <div class="btn-wrap"><button class="acc_copy" data-clipboard-text="123456789" >계좌 복사</button></div>
+                    <div class="account-btn-wrap"><button class="acc_copy" data-clipboard-text="123456789" >계좌 복사</button></div>
                 </li>
                 <li>
                     <p>
                         국민은행 123-45-56789
                         <span>정진한</span>
                     </p>
-                    <div class="btn-wrap"><button class="acc_copy" data-clipboard-text="123456789">계좌 복사</button></div>
+                    <div class="account-btn-wrap"><button class="acc_copy" data-clipboard-text="123456789">계좌 복사</button></div>
                 </li>
             </ul>
         </li>
@@ -29,14 +29,14 @@
                         신한은행 123-45-56789
                         <span>이주연</span>
                     </p>
-                    <div class="btn-wrap"><button class="acc_copy" data-clipboard-text="123456789">계좌 복사</button></div>
+                    <div class="account-btn-wrap"><button class="acc_copy" data-clipboard-text="123456789">계좌 복사</button></div>
                 </li>
                 <li>
                     <p>
                         국민은행 123-45-56789
                         <span>이형규</span>
                     </p>
-                    <div class="btn-wrap"><button class="acc_copy" data-clipboard-text="123456789">계좌 복사</button></div>
+                    <div class="account-btn-wrap"><button class="acc_copy" data-clipboard-text="123456789">계좌 복사</button></div>
                 </li>
             </ul>
         </li>

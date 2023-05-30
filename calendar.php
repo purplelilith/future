@@ -1,4 +1,4 @@
-<section class="calendar">
+<section class="calendar" id="calendar">
     <div class="cal_container">
         <figure class="cal_bg">
             <img src="./css/images/main_bg_1.webp" alt="배경이미지1">

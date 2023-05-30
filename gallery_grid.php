@@ -1,4 +1,4 @@
-<div class="gallery_grid gallery">
+<div class="gallery_grid gallery" id="gallery">
     <h2>
         <span>Always Remember</span>
         <span>Our Moments</span>

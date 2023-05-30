@@ -1,4 +1,4 @@
-<div class="location">
+<div class="location" id="location">
     <div class="loca_title">
         <h3>오시는 길</h3>
         <p class="loca_name">예술의 전당 웨딩홀</p>
@@ -8,7 +8,7 @@
     <div id="daumRoughmapContainer1684742894173" class="root_daum_roughmap root_daum_roughmap_landing"></div>
     </div>
 
-    <ul class="loca_info">
+    <ul class="loca_info" >
         <li>
             <p>지하철</p>
             <p>3호선 남부터미널역 2번 출구 도보 10분</p>
@@ -25,8 +25,10 @@
 
     <div class="btn-wrap">
         <button>카카오내비</button>
-        <button>웨딩홀에 전화</button>
+        <button><a href="tel:010-111-1111">웨딩홀에 전화</a></button>
     </div>
+
+
 </div>
 
 
@@ -39,3 +41,5 @@
 		"key" : "2evep",
 	}).render();
 </script>
+
+

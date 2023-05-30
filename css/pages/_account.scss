@@ -20,6 +20,9 @@
                     position: relative;
                     padding: 1.4rem 15%; display: flex; align-items: center; justify-content: space-between;
                     background-color: rgba($color: #E6C4C0, $alpha: 0.1);
+                    @media screen and (max-width: 360px){
+                        padding: 1.4rem 5%;
+                    }
                     &:not(:first-child)::before{
                         content:""; display: block; width: 70%; height: 1px; background-color:rgba($color: #E6C4C0, $alpha: 0.5);
                         position: absolute; top:0; left: 50%; transform: translateX(-50%);
@@ -27,9 +30,12 @@
                     p{
                         span{display: block; font-weight: 500;}
                     }
-                    .btn-wrap{
-                        min-width: 7rem; font-size: 1.2rem; 
-                        >button{padding: 1rem 1.2rem 1rem 1.2rem; background-color: $color-white; }
+                    .account-btn-wrap{
+                        font-size: 1.2rem; width: auto;
+                        >button{
+                            padding: 1rem 1.2rem 1rem 1.2rem; background-color: $color-white; 
+                            border: 1px solid $color-pink; border-radius: 2rem; color: $color-darkpink;
+                        }
                     }
                 }        
                                    

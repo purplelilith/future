@@ -14,6 +14,7 @@
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/clipboard.min.js"></script>
+    <script src="js/kakao.js"></script>
     <script src="https://kit.fontawesome.com/6c43c79475.js" crossorigin="anonymous"></script>
 
     <title>wedding invitation</title>

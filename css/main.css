@@ -205,6 +205,10 @@ body {
   word-break: keep-all;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input,
 textarea {
   margin: 0;
@@ -778,11 +782,6 @@ h3::before, h3::after {
 .location .loca_info li p:last-child {
   padding-left: 10%;
 }
-.location .btn-wrap {
-  display: flex;
-  justify-content: center;
-  gap: 3%;
-}
 
 .account {
   margin: 10rem auto;
@@ -827,6 +826,11 @@ h3::before, h3::after {
   justify-content: space-between;
   background-color: rgba(230, 196, 192, 0.1);
 }
+@media screen and (max-width: 360px) {
+  .account > ul > li ul li {
+    padding: 1.4rem 5%;
+  }
+}
 .account > ul > li ul li:not(:first-child)::before {
   content: "";
   display: block;
@@ -842,13 +846,16 @@ h3::before, h3::after {
   display: block;
   font-weight: 500;
 }
-.account > ul > li ul li .btn-wrap {
-  min-width: 7rem;
+.account > ul > li ul li .account-btn-wrap {
   font-size: 1.2rem;
+  width: auto;
 }
-.account > ul > li ul li .btn-wrap > button {
+.account > ul > li ul li .account-btn-wrap > button {
   padding: 1rem 1.2rem 1rem 1.2rem;
   background-color: #fff;
+  border: 1px solid #CA8A8B;
+  border-radius: 2rem;
+  color: #926E6F;
 }
 .account > ul > li a.active::after {
   transform: rotate(0);
@@ -893,6 +900,7 @@ nav .nav_bg {
   left: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 nav > ul {
   width: 80%;
