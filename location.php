@@ -24,7 +24,7 @@
     </ul>
 
     <div class="btn-wrap">
-        <button>카카오내비</button>
+        <button><a href="https://map.kakao.com/link/to/디팰리스아파트,37.568633,126.971956" target="_blank" >카카오맵 연결</a></button>
         <button><a href="tel:010-111-1111">웨딩홀에 전화</a></button>
     </div>
 
@@ -41,5 +41,6 @@
 		"key" : "2evep",
 	}).render();
 </script>
+
 
 

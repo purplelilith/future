@@ -1,5 +1,5 @@
 .account{
-    margin: 10rem auto; 
+    margin: 8rem auto; 
     >ul{
         margin-top: 5rem;        
         >li{            
@@ -18,7 +18,7 @@
             ul{
                 li{
                     position: relative;
-                    padding: 1.4rem 15%; display: flex; align-items: center; justify-content: space-between;
+                    padding: 1.4rem 10%; display: flex; align-items: center; justify-content: space-between;
                     background-color: rgba($color: #E6C4C0, $alpha: 0.1);
                     @media screen and (max-width: 360px){
                         padding: 1.4rem 5%;
@@ -31,9 +31,9 @@
                         span{display: block; font-weight: 500;}
                     }
                     .account-btn-wrap{
-                        font-size: 1.2rem; width: auto;
+                        width: auto;
                         >button{
-                            padding: 1rem 1.2rem 1rem 1.2rem; background-color: $color-white; 
+                            padding: 1rem 1.2rem 1rem 1.2rem; background-color: $color-white; font-size: 1.5rem; 
                             border: 1px solid $color-pink; border-radius: 2rem; color: $color-darkpink;
                         }
                     }
@@ -41,8 +41,7 @@
                                    
             }
             /* active */   
-            a.active{
-                
+            a.active{                
                 &::after{transform: rotate(0);}
             }
         }

@@ -45,4 +45,12 @@
             }
         }
     }
+
+    //두번째 디자인
+    .cal_container2{
+        .cal_bg{display: none;}
+        .cal_wrap {
+            background-color: rgba($color: $color-lightpink, $alpha: 0.3);
+        }
+    }
 }

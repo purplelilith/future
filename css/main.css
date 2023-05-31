@@ -250,6 +250,10 @@ main {
   margin: 0 auto;
 }
 
+:root {
+  --vh: 100%;
+}
+
 .row {
   box-sizing: border-box;
   display: flex;
@@ -340,8 +344,7 @@ main {
 
 section {
   width: 100%;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height: var(--vh);
 }
 
 img {
@@ -352,14 +355,14 @@ img {
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: 4.3rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4%;
   opacity: 0.8;
 }
 @media (max-width: 450px) {
   h2 {
-    font-size: 11vw;
+    font-size: 9vw;
   }
 }
 h2 span {
@@ -376,9 +379,10 @@ h2 span {
 }
 .btn-wrap button {
   border: 1px solid #CA8A8B;
-  border-radius: 2rem;
+  border-radius: 3rem;
+  font-size: 1.5rem;
   color: #926E6F;
-  padding: 1rem 2rem 1rem 2rem;
+  padding: 2% 5% 2% 5%;
 }
 
 h3 {
@@ -410,11 +414,35 @@ h3::before, h3::after {
 
 .mainvisual {
   position: relative;
+}
+.mainvisual .main-btn-wrap {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.mainvisual .main-btn-wrap .swiper-button-prev, .mainvisual .main-btn-wrap .swiper-button-next {
+  position: static;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgba(68, 68, 68, 0.3);
+}
+.mainvisual .main-btn-wrap .swiper-button-prev::after, .mainvisual .main-btn-wrap .swiper-button-next::after {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+.mainvisual .main-btn-wrap .swiper-button-prev:hover, .mainvisual .main-btn-wrap .swiper-button-next:hover {
+  background-color: rgba(202, 138, 139, 0.9);
+}
+
+.mainvisual1 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.mainvisual .bg {
+.mainvisual1 .bg {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -422,10 +450,10 @@ h3::before, h3::after {
   left: 0;
   z-index: -1;
 }
-.mainvisual .bg img {
+.mainvisual1 .bg img {
   opacity: 0.1;
 }
-.mainvisual .bg div {
+.mainvisual1 .bg div {
   position: absolute;
   top: 0;
   left: 0;
@@ -434,65 +462,79 @@ h3::before, h3::after {
   background-color: #333;
   opacity: 0.2;
 }
-.mainvisual-wrap {
+.mainvisual1-wrap {
   position: relative;
   width: 90%;
   margin: 0 auto;
 }
-.mainvisual-wrap ul li .mainpic {
+.mainvisual1-wrap ul li .mainpic {
   margin: 0 auto;
   background-color: #fff;
   width: 500px;
-  height: 60vh;
+  height: 55vh;
   border-radius: 250px 250px 0 0;
   overflow: hidden;
 }
 @media (max-width: 767px) {
-  .mainvisual-wrap ul li .mainpic {
+  .mainvisual1-wrap ul li .mainpic {
     width: 320px;
     border-radius: 160px 160px 0 0;
   }
 }
 @media (max-width: 359px) {
-  .mainvisual-wrap ul li .mainpic {
+  .mainvisual1-wrap ul li .mainpic {
     width: 280px;
     border-radius: 140px 140px 0 0;
   }
 }
-.mainvisual-wrap .flex_wrap {
+.mainvisual1-wrap .flex_wrap {
   display: flex;
   justify-content: space-between;
   margin-top: 1.2rem;
   padding: 0 5%;
 }
-.mainvisual-wrap .flex_wrap p {
+.mainvisual1-wrap .flex_wrap p {
   opacity: 0.8;
 }
-.mainvisual-wrap .flex_wrap p:first-child {
+.mainvisual1-wrap .flex_wrap p:first-child {
   max-width: 13rem;
 }
-.mainvisual-wrap .main-btn-wrap {
-  position: absolute;
+.mainvisual1-wrap .main-btn-wrap {
   bottom: -5%;
   left: 5%;
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
 }
-.mainvisual-wrap .main-btn-wrap .swiper-button-prev, .mainvisual-wrap .main-btn-wrap .swiper-button-next {
-  position: static;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  background-color: rgba(68, 68, 68, 0.3);
-}
-.mainvisual-wrap .main-btn-wrap .swiper-button-prev::after, .mainvisual-wrap .main-btn-wrap .swiper-button-next::after {
-  font-size: 1rem;
+
+.mainvisual2 {
   color: #fff;
-  font-weight: 600;
 }
-.mainvisual-wrap .main-btn-wrap .swiper-button-prev:hover, .mainvisual-wrap .main-btn-wrap .swiper-button-next:hover {
-  background-color: rgba(202, 138, 139, 0.9);
+.mainvisual2 .swiper {
+  width: 100%;
+  height: 100%;
+}
+.mainvisual2_wrap {
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(30deg, rgba(84, 61, 69, 0.7) 5%, rgba(224, 91, 171, 0.4), transparent 50%);
+}
+.mainvisual2_wrap .textbox {
+  padding-left: 7%;
+  padding-bottom: 20%;
+  box-sizing: border-box;
+}
+.mainvisual2_wrap .textbox h2 {
+  text-align: left;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0 0.4rem 0.4rem rgba(0, 0, 0, 0.3));
+}
+.mainvisual2_wrap .main-btn-wrap {
+  padding-left: 7%;
+  padding-bottom: 10%;
 }
 
 .intro {
@@ -587,7 +629,7 @@ h3::before, h3::after {
 
 .gallery {
   width: 90%;
-  margin: 4rem auto;
+  margin: 8rem auto;
 }
 .gallery h2 {
   font-size: 2rem;
@@ -748,9 +790,15 @@ h3::before, h3::after {
   color: #CA8A8B;
   font-weight: 500;
 }
+.calendar .cal_container2 .cal_bg {
+  display: none;
+}
+.calendar .cal_container2 .cal_wrap {
+  background-color: rgba(230, 196, 192, 0.3);
+}
 
 .location {
-  margin: 4rem auto;
+  margin: 8rem auto;
 }
 .location .loca_title {
   text-align: center;
@@ -766,6 +814,9 @@ h3::before, h3::after {
 }
 .location .map_wrap #daumRoughmapContainer1684742894173 {
   width: 100%;
+}
+.location .map_wrap .map {
+  z-index: -1;
 }
 .location .loca_info {
   padding: 0 10%;
@@ -784,7 +835,7 @@ h3::before, h3::after {
 }
 
 .account {
-  margin: 10rem auto;
+  margin: 8rem auto;
 }
 .account > ul {
   margin-top: 5rem;
@@ -820,7 +871,7 @@ h3::before, h3::after {
 }
 .account > ul > li ul li {
   position: relative;
-  padding: 1.4rem 15%;
+  padding: 1.4rem 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -847,12 +898,12 @@ h3::before, h3::after {
   font-weight: 500;
 }
 .account > ul > li ul li .account-btn-wrap {
-  font-size: 1.2rem;
   width: auto;
 }
 .account > ul > li ul li .account-btn-wrap > button {
   padding: 1rem 1.2rem 1rem 1.2rem;
   background-color: #fff;
+  font-size: 1.5rem;
   border: 1px solid #CA8A8B;
   border-radius: 2rem;
   color: #926E6F;
@@ -893,6 +944,7 @@ h3::before, h3::after {
 
 nav {
   z-index: 10;
+  position: relative;
 }
 nav .nav_bg {
   position: fixed;
@@ -914,6 +966,7 @@ nav > ul {
   display: flex;
   padding: 0 2rem;
   box-sizing: border-box;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 nav > ul > li {
@@ -984,5 +1037,5 @@ nav.on ul.second-depth {
 }
 
 .share {
-  margin: 5rem auto;
+  margin: 8rem auto;
 }/*# sourceMappingURL=main.css.map */

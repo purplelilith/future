@@ -1,5 +1,5 @@
 .location{
-    margin: 4rem auto;
+    margin: 8rem auto;
     .loca_title{
         text-align: center; 
         .loca_name{font-size: 2rem; font-weight: 300; margin-bottom: 1rem;}
@@ -8,6 +8,7 @@
         width: 100%;
         margin: 4rem 0;
         #daumRoughmapContainer1684742894173{width: 100%;}
+        .map{z-index: -1;}
     }
     .loca_info{padding: 0 10%; margin-bottom: 3rem;
         li{

@@ -1,5 +1,5 @@
-<section class="calendar" id="calendar">
-    <div class="cal_container">
+<div class="calendar" id="calendar">
+    <div class="cal_container cal_container2">
         <figure class="cal_bg">
             <img src="./css/images/main_bg_1.webp" alt="배경이미지1">
         </figure>
@@ -30,7 +30,7 @@
         <p id="count"></p>
     </div>
 
-</section>
+</div>
 
 <script>
     window.onload = function () { buildCalendar(); }    // 웹 페이지가 로드되면 buildCalendar 실행

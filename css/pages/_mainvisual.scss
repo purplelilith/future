@@ -1,5 +1,24 @@
-.mainvisual {
+.mainvisual{
     position: relative;
+    &-wrap{
+        ul{  
+            li{
+
+            }
+        }
+    }
+    .main-btn-wrap{
+        position: absolute; display: flex; align-items: center; gap: 1.2rem;
+        .swiper-button-prev, .swiper-button-next {
+            position: static; 
+            width: 2.5rem; height: 2.5rem;
+            border-radius: 50%; background-color: rgba($color: #444, $alpha: 0.3);
+            &::after{font-size: 1rem; color: $color-white; font-weight: 600;}
+            &:hover{background-color: rgba($color: #CA8A8B, $alpha: 0.9);}
+        }
+    }
+}//mainvisual 공통
+.mainvisual1 {
     display: flex; align-items: center; justify-content: center;
     .bg{
         width: 100%; height: 100%;
@@ -20,7 +39,7 @@
                 .mainpic{                
                     margin: 0 auto;
                     background-color: $color-white;
-                    width: 500px; height: 60vh;
+                    width: 500px; height: 55vh;
                     border-radius: 250px 250px 0 0;
                     overflow: hidden;
                     @include mobile{width: 320px; border-radius: 160px 160px 0 0;}
@@ -35,17 +54,26 @@
                 &:first-child{max-width: 13rem;}
             }
         }
-        .main-btn-wrap{
-            position: absolute;
-            bottom: -5%; left: 5%;
-            display: flex; align-items: center; gap: 1.2rem;
-            .swiper-button-prev, .swiper-button-next {
-                position: static; 
-                width: 2.5rem; height: 2.5rem;
-                border-radius: 50%; background-color: rgba($color: #444, $alpha: 0.3);
-                &::after{font-size: 1rem; color: $color-white; font-weight: 600;}
-                &:hover{background-color: rgba($color: #CA8A8B, $alpha: 0.9);}
+        .main-btn-wrap{bottom: -5%; left: 5%;}
+    }
+}//main-visaul1
+.mainvisual2{
+    color: $color-white;
+    .swiper{
+        width: 100%; height: 100%;
+        
+    }
+    &_wrap{
+        z-index: 2; display: flex; align-items: flex-end;
+        position: absolute; left: 0; bottom: 0; width: 100%; height: 100%; 
+        background: linear-gradient(30deg, rgba(84, 61, 69, 0.7) 5%, rgba(224, 91, 171, 0.4), transparent 50% );
+        .textbox{
+            padding-left: 7%; padding-bottom: 20%; box-sizing: border-box;
+            h2{
+                text-align: left; margin-bottom: 2rem;
+                filter: drop-shadow(0 0.4rem 0.4rem rgba(0, 0, 0, 0.3) );
             }
         }
+        .main-btn-wrap{padding-left: 7%; padding-bottom: 10%;}
     }
-}//main-visaul
+}
