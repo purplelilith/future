@@ -27,6 +27,7 @@
       Kakao.init('139070f67f5fbb60e83640aab6600dcf');
     </script>
     <script src="https://kit.fontawesome.com/6c43c79475.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 
     <title>wedding invitation</title>
 </head>
@@ -50,7 +51,7 @@
         <p>Copyright 2023 L’ete vert All right reserved</p>
     </footer>
 </body>
-</html>
+
 <script>
     $(document).ready( function() {
         $("#nav").load("nav.html");
@@ -64,8 +65,11 @@
         $("#account").load("account.html");
         $("#notice").load("notice.html");
         $("#share").load("share.html");
+
+        map.relayout();
     });
 </script>
+
 <script>
     const setVh = () => {
       document.documentElement.style.setProperty('--vh', `${window.innerHeight}px`)
@@ -73,3 +77,5 @@
     window.addEventListener('resize', setVh);
     setVh();
 </script>
+
+</html>
