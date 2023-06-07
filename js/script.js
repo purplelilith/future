@@ -139,9 +139,3 @@ let mainswiper = new Swiper('.swiper', {
   
       }
 
-      new daum.roughmap.Lander({
-		"timestamp" : "1685523650750",
-		"key" : "2eykj",
-		"mapWidth" : "640",
-		"mapHeight" : "360"
-	}).render();
