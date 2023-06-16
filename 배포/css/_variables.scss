@@ -1,0 +1,37 @@
+// 컨텐츠 크기
+$container-width: 800px;
+
+// 메인 컬러
+$color-darkpink: #926E6F;
+$color-pink: #CA8A8B;
+$color-lightpink: #E6C4C0;
+$color-green: #999B84;
+
+// color
+$color-black: #333;
+$color-white: #fff;
+
+// gray scale
+$color-gray01: #4d4d4d;
+$color-gray02: #939597;
+$color-gray03: #f5f5f5;
+$color-gray04: #f6f6f6;
+$color-gray05: #e5e5e5;
+$color-gray06: #706f6f;
+$color-gray07: #707070;
+
+// 폰트
+$base-font: 10px;
+$font-family: "Ms Madi", "Noto Sans KR", sans-serif;
+
+
+// 실제 적용시 알기 쉽게 font-family > '폰트명' 으로 수정 base.scss 에서 폰트 패밀리 바꿔주기
+// ex) $gmarketsasns: 'GmarketSans', sans-serif;
+
+// 반응형
+
+$breakpoint-tablet: 768px; // 768px ~ 1024px
+$breakpoint-mobile: 360px; // 360px ~ 767px
+$breakpoint-smallest: 320px; //320px ~ 359px
+
+
