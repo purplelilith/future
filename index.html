@@ -20,15 +20,18 @@
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/clipboard.min.js"></script>
+    <script src="js/photoswipe-lightbox.esm.min.js"></script>
     <script type="module">
         import PhotoSwipeLightbox from '/js/photoswipe-lightbox.esm.min.js';
         const lightbox = new PhotoSwipeLightbox({
-            gallery: '#my-gallery',
+            gallery: '#my-gallery1',
+            gallery: '#my-gallery2',
             children: 'a',
             zoom: false,
             showHideAnimationType: 'fade',
             showAnimationDuration: 500,
             hideAnimationDuration: 500,
+            bgClickAction: 'false',
             imageClickAction: 'next',
             tapAction: 'next',
           pswpModule: () => import('/js/photoswipe.esm.min.js')
@@ -189,13 +192,13 @@
 
        
         <!-- gallery grid style start -->
-<!--         <div class="gallery_grid gallery" id="gallery">
+        <div class="gallery_grid gallery" id="gallery">
             <h2>
                 <span>Always Remember</span>
                 <span>Our Moments</span>
             </h2>
         
-            <div id="my-gallery">
+            <div id="my-gallery1">
                 <div class="flexwrap">
                     <figure itemprop="associatedMedia" itemscope>
                     <a href="./css/images/wedding_4.webp" data-pswp-width="1024" data-pswp-height="683" >
@@ -305,7 +308,7 @@
             <div class="btn-wrap">
                 <button id='btn_fold'></button>
             </div>
-        </div> -->
+        </div>
         <!-- gallery grid style end -->
 
 
@@ -317,7 +320,7 @@
                 <span>Our Moments</span>
             </h2>
         
-            <div id="my-gallery" class="myswiper">
+            <div id="my-gallery2" class="myswiper">
                 <div class="swiper-wrapper">
                     <figure class="swiper-slide" itemprop="associatedMedia" itemscope>
                     <a href="./css/images/wedding_4.webp" data-pswp-width="1024" data-pswp-height="683" >

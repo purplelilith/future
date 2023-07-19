@@ -1,3 +1,12 @@
+@charset "utf-8";
+
+@import '../variables';
+@import '../mixin';
+@import '../font';
+@import '../reset';
+@import '../grid';
+@import '../component';
+
 .mainvisual{
     position: relative;
     &-wrap{
@@ -39,7 +48,7 @@
                 .mainpic{                
                     margin: 0 auto;
                     background-color: $color-white;
-                    width: 500px; height: calc(0.6 / var(--vh));
+                    width: 500px; height: 55%;
                     border-radius: 250px 250px 0 0;
                     overflow: hidden;
                     @include mobile{width: 320px; border-radius: 160px 160px 0 0;}

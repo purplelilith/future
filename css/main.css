@@ -433,7 +433,7 @@ h3::before, h3::after {
   top: 0;
   left: 0;
   width: 100%;
-  height: var(--vh);
+  height: 100vh;
   background-color: rgba(146, 110, 111, 0.6);
   pointer-events: none;
   z-index: 9;
@@ -516,7 +516,7 @@ h3::before, h3::after {
   margin: 0 auto;
   background-color: #fff;
   width: 500px;
-  height: calc(0.7 / var(--vh));
+  height: calc(0.6 / var(--vh));
   border-radius: 250px 250px 0 0;
   overflow: hidden;
 }
@@ -755,7 +755,7 @@ h3::before, h3::after {
 
 .calendar .cal_container {
   position: relative;
-  height: 70vh;
+  height: calc(0.7 / var(--vh));
 }
 .calendar .cal_container .cal_bg {
   width: 100%;
@@ -1075,4 +1075,4 @@ nav.on ul.second-depth {
 
 .share {
   margin: 8rem auto;
-}/*# sourceMappingURL=main.css.map */# sourceMappingURL=main.css.map */
+}

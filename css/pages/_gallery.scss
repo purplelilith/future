@@ -3,7 +3,7 @@
     h2{font-size: 2rem; margin-bottom: 3rem;}
 }
 .gallery_grid{
-    #my-gallery{        
+    #my-gallery1{        
         .flexwrap{
             display: flex; gap: 0.8rem; margin-bottom: 0.8rem;
             figure{flex: 1; position: relative; 
@@ -27,7 +27,7 @@
 }
 
 .gallery_slide {
-    #my-gallery{
+    #my-gallery2{
         position: relative;
         overflow: hidden; 
         .swiper-wrapper{
